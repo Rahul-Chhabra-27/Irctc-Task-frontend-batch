@@ -1,0 +1,64 @@
+
+# Assignment: Flight Booking System Using JavaScript (Arrays & functions)
+
+---
+
+## Part 1: Understanding Arrays
+
+### Task 1: Defining an Array of Flights
+1. Define an array called `availableFlights` which contains several flight objects. Each flight should have the following properties:
+   - `flightNumber`: A unique flight number (e.g., 'AI101').
+   - `from`: The departure city (e.g., 'New York').
+   - `to`: The destination city (e.g., 'London').
+   - `price`: The price of the flight (e.g., 700).
+
+### Example:
+```javascript
+var availableFlights = [
+    { flightNumber: 'AI101', from: 'New York', to: 'London', price: 700 },
+    { flightNumber: 'AI102', from: 'London', to: 'Paris', price: 120 }
+];
+```
+
+### Task 2: Manipulating the Flight Data
+- Write a function `searchFlight(from, to)` that searches for flights from one city to another and returns matching flights.
+- Write a function `bookFlight(flightNumber)` that takes a flight number as an argument and "books" the flight if it exists, otherwise it shows an error message.
+
+---
+
+## Part 2: Understanding IIFE (Immediately Invoked Function Expressions)
+
+### Task 3: Wrapping Your Code in an IIFE
+- Wrap your entire flight booking system code inside an IIFE to prevent pollution of the global namespace.
+  
+### Example:
+```javascript
+(function() {
+    // Your flight booking system code here
+})();
+```
+
+### Task 4: Immediate Flight Booking
+- Modify the IIFE to automatically search for and book a flight between two cities (e.g., New York to London) when the code is run.
+
+---
+
+## Part 3: Additional Exercises
+
+### Task 5: Adding New Flights
+- Write a function to add new flights to the `availableFlights` array. This function should take in flight details (number, from, to, price) and add the new flight to the array.
+
+### Task 6: Removing Flights
+- Write a function that removes a flight based on the flight number.
+
+---
+
+## Submission:
+- Submit the final version of your JavaScript code in a `.js` file.
+- Ensure that your code runs without errors and performs the tasks mentioned in the assignment.
+
+---
+
+### **Bonus Challenge:**
+- Implement a function that sorts the available flights based on price (low to high).
+- Allow the user to filter flights that are under a certain price.
